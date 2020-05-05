@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    I360 Web Design Template
+-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Sphynx TV</title>
+<!-- resets browser defaults -->
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<!-- custom styles -->
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script src="js/jquery.min.js" ></script>
+<!-- Mobile menu -->
+<script src="js/iscroll.js" ></script>
+<script src="js/jquery.drawer.min.js" ></script>
+
+</head>
+<body>
+<header>
+  <div class="wrap">
+  <div class="logo"> <a href="index.html" > <img src="images/logo.png" ></a></div>
+  <!-- Mobile menu -->
+  <nav class="nav_m">
+    <ul>
+      <b>
+      <li><a href="Contact.html" >Contact Me</a></li>
+      <li><a href="Information.html" >Information</a></li>
+      <li><a href="Photo.html" >Photo</a></li>
+      <li><a href="History.html">History</a></li>
+      <li><a href="index.html" >Home</a></li>
+      </b>
+    </ul>
+  </nav>
+  <div class="nav_1">
+    <div class="drawer drawer-right">
+      <div class="drawer-toggle drawer-hamberger"> <span></span> </div>
+      <div class="drawer-main drawer-default">
+      <!-- pc menu -->
+        <nav class="drawer-nav" role="navigation">
+          <ul class="drawer-nav-list">
+            <li><a href="index.html" >Index</a></li>
+            <li><a href="History.html" >History</a></li>
+            <li><a href="Photo.html" >Photo</a></li>
+            <li><a href="Information.html" >Information</a></li>
+            <li><a href="Contact.html" >Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Mobile menu -->
+      <script>
+                    $(document).ready(function () {
+                        $('.drawer').drawer();
+                        $('.js-trigger').click(function () {
+                            $('.drawer').drawer("open");
+                        });
+                    });
+      </script> 
+    </div>
+    <div class="clearfix"> </div>
+  </div>
+</header>
+<div class="banner">
+  <div class="index_banner" id="banner_tabs">
+  <!-- banner img -->
+   <ul>
+      <li><a> <img src="images/banner03.jpg"  width="100%"></a></li>
+      <li><a> <img src="images/banner01.jpg"  width="100%"></a></li>
+      <li><a> <img src="images/banner04.jpg"  width="100%"></a></li>
+    </ul>
+    <img style="visibility: hidden;" src="images/banner01.jpg"  width="100%"> <cite><span class="cur">1</span> <span>2</span><span>3</span> </cite>
+    <div class=" clear "> </div>
+  </div>
+</div>
+<div class="content_1">
+  <div class="bt_1 bounceInDown wow">
+    <p class="txt_7">Photo gallery</p>
+    <div style="max-width:908px;margin:40px auto;padding:0 10px 10px">
+    <!-- flex-images img -->
+	<div class="flex-images">
+		<div class="item" data-w="219" data-h="180" style="width: 159px; height: 131px; display: block;"><img src="images/1.jpg"></div>
+		<div class="item" data-w="279" data-h="180" style="width: 202px; height: 131px; display: block;"><img src="images/2.jpg"></div>
+		<div class="item" data-w="270" data-h="180" style="width: 196px; height: 131px; display: block;"><img src="images/3.jpg"></div>
+		<div class="item" data-w="270" data-h="180" style="width: 196px; height: 131px; display: block;"><img src="images/4.jpg"></div>
+		<div class="item" data-w="147" data-h="180" style="width: 103px; height: 131px; display: block;"><img src="images/5.jpg"></div>
+		<div class="item" data-w="276" data-h="180" style="width: 172px; height: 113px; display: block;"><img src="images/6.jpg"></div>
+		<div class="item" data-w="319" data-h="180" style="width: 199px; height: 113px; display: block;"><img src="images/7.jpg"></div>
+		<div class="item" data-w="270" data-h="180" style="width: 169px; height: 113px; display: block;"><img src="images/8.jpg"></div>
+		<div class="item" data-w="240" data-h="180" style="width: 150px; height: 113px; display: block;"><img src="images/9.jpg"></div>
+		<div class="item" data-w="270" data-h="180" style="width: 166px; height: 113px; display: block;"><img src="images/10.jpg"></div>
+		<div class="item" data-w="240" data-h="180" style="width: 156px; height: 117px; display: block;"><img src="images/11.jpg"></div>
+		<div class="item" data-w="270" data-h="180" style="width: 175px; height: 117px; display: block;"><img src="images/12.jpg"></div>
+		<div class="item" data-w="283" data-h="180" style="width: 184px; height: 117px; display: block;"><img src="images/13.jpg"></div>
+		<div class="item" data-w="271" data-h="180" style="width: 176px; height: 117px; display: block;"><img src="images/14.jpg"></div>
+		<div class="item" data-w="258" data-h="180" style="width: 165px; height: 117px; display: block;"><img src="images/15.jpg"></div>
+	</div>
+</div>
+  </div>
+  
+</div>
+<div class="foot">
+  <div class="foot-o">
+    <div class="foot-o-nav">
+      <p>copyright@Sphynx</p>
+    </div>
+  </div>
+</div>
+<!-- banner -->
+<script type="text/javascript">
+        (function () {
+            if (!Function.prototype.bind) {
+                Function.prototype.bind = function (obj) {
+                    var owner = this, args = Array.prototype.slice.call(arguments), callobj = Array.prototype.shift.call(args);
+                    return function (e) { e = e || top.window.event || window.event; owner.apply(callobj, args.concat([e])); };
+                };
+            }
+        })(); //Window judgment
+        var banner_tabs = function (id) {
+            this.ctn = document.getElementById(id);
+            this.adLis = null;
+            this.btns = null;
+            this.animStep = 0.2; //Animation speed0.1～0.9
+            this.switchSpeed = 6; //Animation speed autoplay interval(s)
+            this.defOpacity = 1;
+            this.tmpOpacity = 1;
+            this.crtIndex = 0;
+            this.crtLi = null;
+            this.adLength = 0;
+            this.timerAnim = null;
+            this.timerSwitch = null;
+            this.init();
+        };
+        banner_tabs.prototype = {
+            fnAnim: function (toIndex) {
+                if (this.timerAnim) { window.clearTimeout(this.timerAnim); }
+                if (this.tmpOpacity <= 0) {
+                    this.crtLi.style.opacity = this.tmpOpacity = this.defOpacity;
+                    this.crtLi.style.filter = 'Alpha(Opacity=' + this.defOpacity * 100 + ')';
+                    this.crtLi.style.zIndex = 0;
+                    this.crtIndex = toIndex;
+                    return;
+                }
+                this.crtLi.style.opacity = this.tmpOpacity = this.tmpOpacity - this.animStep;
+                this.crtLi.style.filter = 'Alpha(Opacity=' + this.tmpOpacity * 100 + ')';
+                this.timerAnim = window.setTimeout(this.fnAnim.bind(this, toIndex), 50);
+            },
+            fnNextIndex: function () {
+                return (this.crtIndex >= this.adLength - 1) ? 0 : this.crtIndex + 1;
+            },
+            fnSwitch: function (toIndex) {
+                if (this.crtIndex == toIndex) { return; }
+                this.crtLi = this.adLis[this.crtIndex];
+                for (var i = 0; i < this.adLength; i++) {
+                    this.adLis[i].style.zIndex = 0;
+                }
+                this.crtLi.style.zIndex = 2;
+                this.adLis[toIndex].style.zIndex = 1;
+                for (var i = 0; i < this.adLength; i++) {
+                    this.btns[i].className = '';
+                }
+                this.btns[toIndex].className = 'cur'
+                this.fnAnim(toIndex);
+            },
+            fnAutoPlay: function () {
+                this.fnSwitch(this.fnNextIndex());
+            },
+            fnPlay: function () {
+                this.timerSwitch = window.setInterval(this.fnAutoPlay.bind(this), this.switchSpeed * 1000);
+            },
+            fnStopPlay: function () {
+                window.clearTimeout(this.timerSwitch);
+            },
+            init: function () {
+                this.adLis = this.ctn.getElementsByTagName('li');
+                this.btns = this.ctn.getElementsByTagName('cite')[0].getElementsByTagName('span');
+                this.adLength = this.adLis.length;
+                for (var i = 0, l = this.btns.length; i < l; i++) {
+                    with ({ i: i }) {
+                        this.btns[i].index = i;
+                        this.btns[i].onclick = this.fnSwitch.bind(this, i);
+                        this.btns[i].onclick = this.fnSwitch.bind(this, i);
+                    }
+                }
+                this.adLis[this.crtIndex].style.zIndex = 2;
+                this.fnPlay();
+                this.ctn.onmouseover = this.fnStopPlay.bind(this);
+                this.ctn.onmouseout = this.fnPlay.bind(this);
+            }
+        };
+        var player1 = new banner_tabs('banner_tabs');//Banner tab switch
+    </script> 
+
+</body>
+</html>
